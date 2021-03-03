@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="style-sccs.css">
+</head>
+<body>
+	<header class="Title">
+		<div class="opacity">
+			<h1>Gruzovoz</h1>
+			<h2>Санкт-Петербург</h2>
+			<img src="gerb_2.png" alt="" class="gerb">
+		</div>
+	</header>
+
+	<main>
+		<div class="form">
+			<form action="#" id="form" class="form_body">
+				<!-- Заголовок формы -->
+				<div class="header_form">Получите обратный звонок по вашему заказу.</div>
+				<!-- Поле ввода имени пользователя -->
+				<div class="element_form">
+					<label for="for_name" class="label_form">Ваше имя*:</label>
+					<input id="for_name" type="text" name="name" class="input_form _req">
+				</div>
+				<!-- Поле ввода телефона пользователя -->
+				<div class="element_form">
+					<label for="for_phone" class="label_form">Ваш номер телефона*:</label>
+					<input id="for_phone" type="tel" name="phone_number" class="input_form _req _tel">
+				</div>
+				<!-- Поле ввода адреса загрузки -->
+				<div class="element_form">
+					<label for="for_load" class="label_form">Адрес загрузки:</label>
+					<input id="for_load" type="text" name="load" class="input_form">
+				</div>
+				<!-- Поле ввода адреса разгрузки -->
+				<div class="element_form">
+					<label for="for_unload" class="label_form">Адрес разгрузки:</label>
+					<input id="for_unload" type="text" name="unload" class="input_form">
+				</div>
+				<!-- Наличие грузчиков в заказе -->
+				<div class="element_form">
+					<div class="label_form">Необходимость грузчиков в заказе:</div>
+					<div class="div_radiobuttons">
+						<div class="div_element_radio">
+							<input id="with_loader" checked class="input_radio_button" type="radio" value="load_yes" name="loader">
+							<label for="with_loader" class="label_radio"><span>С грузчиками</span></label>
+						</div>
+						<div class="div_element_radio">
+							<input id="without_loader" class="input_radio_button" type="radio" value="load_no" name="loader">
+							<label for="without_loader" class="label_radio"><span>Без грузчиков</span></label>
+						</div>
+					</div>
+				</div>
+				<!-- Поле для комментариев к заказу -->
+				<div class="element_form">
+					<label for="comments" class="label_form">Что хотите перевезти:</label>
+					<textarea name="message" id="comments" class="textarea"></textarea>
+				</div>
+				<!-- Блок прикрепления фото к заказу -->
+				<div class="element_form">
+					<div class="label_form">Прикрепите фото перевозимых вещей:</div>
+					<div class="file">
+						<div class="element_file">
+							<input id="formImage" accept=".jpg, .png, .gif" type="file" name="image" class="file_input">
+							<div class="file_button">Выбрать</div>
+						</div>
+						<div id="formPreview" class="file_preview"></div>
+					</div>
+				</div>
+				<!-- Чекбокс по согласию с условиями соглашения -->
+				<div class="element_form">
+					<div class="checkbox">
+						<input id="for_agreement" checked type="checkbox" name="agreement" class="element_checkbox _req">
+						<label for="for_agreement" class="label_checkbox">Я даю своё согласие на обработку персональных данных в соответствии с <a href="#">Условиями*</a></label>
+					</div>
+				</div>
+				<button type="submit" class="form_button">Отправить</button>
+			</form>
+		</div>
+	</main>
+	<footer>
+		Это типо ФУТЕР
+	</footer>
+	<script src="script.js"></script>
+</body>
+</html>
